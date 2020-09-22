@@ -1,2 +1,2 @@
-# git101_remote
+# git101
 Git 101 Workshop
