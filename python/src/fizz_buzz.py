@@ -29,12 +29,11 @@ def main():
     if n == 1:
         three, five, fifteen = fizz_buzz(1000)
     elif n > 2:
+        logging.warning("Usage: python fizz_buzz.py <int>")
         logging.error("Too many arguments only one allowed")
-        logging.info("Usage: python fizz_buzz.py <int>")
-        sys.exit()
     else:
         up_lim = int(sys.argv[1])
-        if up_lim == 0 or up_lim < 0:
+        if up_lim <= 0:
             logging.error("Please input a non negative non zero value")
             sys.exit()
         three, five, fifteen = fizz_buzz(up_lim)
