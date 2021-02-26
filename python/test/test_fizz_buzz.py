@@ -6,7 +6,7 @@ sys.path.append("../src")
 import fizz_buzz
 
 
-class TestStringMethods(unittest.TestCase):
+class TestFizzBuzzMethods(unittest.TestCase):
 
     def test_fizz_buzz(self):
         three, five, fifteen = fizz_buzz.fizz_buzz(1000)
