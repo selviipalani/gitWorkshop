@@ -1,6 +1,16 @@
 import unittest
+import sys
+
+sys.path.append("../src")
+import fizz_buzz
+# from src import fizz_buzz
+
 
 class TestStringMethods(unittest.TestCase):
+
+    def test_fizz_buzz_main(self):
+        self.assertEqual(fizz_buzz.main(), [])
+        print("executing fb main")
 
     def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
@@ -15,6 +25,7 @@ class TestStringMethods(unittest.TestCase):
         # check that s.split fails when the separator is not a string
         with self.assertRaises(TypeError):
             s.split(2)
+
 
 if __name__ == '__main__':
     unittest.main()
