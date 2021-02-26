@@ -14,7 +14,19 @@ def fizz_buzz(limit):
 
     """
     three, five, fifteen = [], [], []
-    # TODO HELP ME!!
+    for i in range(1, limit):
+        if limit % 3 == 0:
+            print("Fizz")
+            three.append(i)
+
+        if limit % 5 == 0:
+            print("Buzz")
+            three.append(i)
+        
+        if limit % 15 == 0:
+            print("FizzBuzz")
+            three.append(i)
+
     return three, five, fifteen
 
 
