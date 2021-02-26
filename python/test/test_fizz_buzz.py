@@ -1,31 +1,31 @@
+# lib imports
 import unittest
 import sys
 
 sys.path.append("../src")
 import fizz_buzz
-# from src import fizz_buzz
 
 
 class TestStringMethods(unittest.TestCase):
 
-    def test_fizz_buzz_main(self):
-        self.assertEqual(fizz_buzz.main(), [])
-        print("executing fb main")
+    def test_fizz_buzz(self):
+        three, five, fifteen = fizz_buzz.fizz_buzz(1000)
+        
+        self.assertEqual(len(three), 333)
+        self.assertEqual(len(five), 199)
+        self.assertEqual(len(fifteen), 66)
+    
+    def test_fizz_buzz_neg(self):
+        three, five, fifteen = fizz_buzz.fizz_buzz(-1)
+        self.assertEqual(len(three), 0)
+        self.assertEqual(len(five), 0)
+        self.assertEqual(len(fifteen), 0)
 
-    def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOO')
-
-    def test_isupper(self):
-        self.assertTrue('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
-
-    def test_split(self):
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
-        # check that s.split fails when the separator is not a string
-        with self.assertRaises(TypeError):
-            s.split(2)
-
+    def test_fizz_buzz_zero(self):
+        three, five, fifteen = fizz_buzz.fizz_buzz(0)
+        self.assertEqual(len(three), 0)
+        self.assertEqual(len(five), 0)
+        self.assertEqual(len(fifteen), 0)
 
 if __name__ == '__main__':
     unittest.main()
