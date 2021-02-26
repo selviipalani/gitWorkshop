@@ -7,6 +7,7 @@
 - Messages
 - Remotes and Branches
 - Staying up to Date
+- DEMO
 - Outro
 
 
