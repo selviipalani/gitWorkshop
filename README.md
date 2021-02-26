@@ -9,5 +9,3 @@
 - Staying up to Date
 - DEMO
 - Outro
-
-
