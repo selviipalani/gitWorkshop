@@ -2,17 +2,7 @@ use std::env;
 use log::{info};
 
 fn fizzbuzz(up_limit: i32) {
-    for up_limit in 1..up_limit + 1 {
-        if is_divisible_by(up_limit, 3) {
-            println!("Fizz: {}", up_limit);
-        }
-        if is_divisible_by(up_limit, 5) {
-            println!("Buzz: {}", up_limit);
-        }
-        if is_divisible_by(up_limit, 15) {
-            println!("Fizz Buzz: {}", up_limit);
-        }
-    }
+    // TODO Implement me!
 }
 
 // Function that returns a boolean value
