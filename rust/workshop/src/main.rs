@@ -4,11 +4,13 @@ use log::{info};
 fn fizzbuzz(up_limit: i32) {
     for up_limit in 1..up_limit + 1 {
         if is_divisible_by(up_limit, 3) {
-            println!("Fizz");
-        } else if is_divisible_by(up_limit, 5) {
-            println!("Buzz");
-        } else if is_divisible_by(up_limit, 15) {
-            println!("Fizz Buzz");
+            println!("Fizz: {}", up_limit);
+        }
+        if is_divisible_by(up_limit, 5) {
+            println!("Buzz: {}", up_limit);
+        }
+        if is_divisible_by(up_limit, 15) {
+            println!("Fizz Buzz: {}", up_limit);
         }
     }
 }
@@ -26,7 +28,6 @@ fn is_divisible_by(lhs: i32, rhs: i32) -> bool {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    println!("Size of the args: {}", args.len());
     if args.len() < 2 {
         fizzbuzz(10000);
     } else {
