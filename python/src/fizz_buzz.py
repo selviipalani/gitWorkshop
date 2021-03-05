@@ -30,7 +30,7 @@ def fizz_buzz(limit):
     return three, five, fifteen
 
 
-def fizz_buzz_diff(limit):
+def fizz_buzz_diff_selvii(limit):
 
     for i in range(1, limit):
         if i % 12 == 0:
