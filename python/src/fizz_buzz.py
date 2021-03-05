@@ -5,6 +5,7 @@ import sys
 
 
 def fizz_buzz(limit):
+
     """
     FizzBuzz function
             Parameters:
