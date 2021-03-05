@@ -30,6 +30,17 @@ def fizz_buzz(limit):
     return three, five, fifteen
 
 
+def fizz_buzz_diff(limit):
+
+    for i in range(1, limit):
+        if i % 12 == 0:
+            print("Not Fizz")
+        if i % 23 == 0:
+            print("Not Buzz")
+        if i % 1080 == 0:
+            print("Not FizzBuzz")
+
+
 def main():
     """
     Entrypoint for fizz_buzz.py
@@ -39,7 +50,7 @@ def main():
     n = len(sys.argv)
     three, five, fifteen = [], [], []
     if n == 1:
-        three, five, fifteen = fizz_buzz(1000)
+        fizz_buzz_diff(1000)
     elif n > 2:
         logging.warning("Usage: python fizz_buzz.py <int>")
         logging.error("Too many arguments only one allowed")
