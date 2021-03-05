@@ -2,12 +2,11 @@
 ## Welcome!!!
 
 ### Agenda
-- Small Intros
-- What is Git?
-- Messages
-- Remotes and Branches
-- Staying up to Date
-- DEMO
+- Intros
+- Recap Branches
+- Rebasing
+- Hooks
+- DEMO (interactive)
 - Outro
 
 #### Liked the Git Hooks?
