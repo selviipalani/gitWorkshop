@@ -14,18 +14,16 @@ def fizz_buzz(limit):
 
     """
     three, five, fifteen = [], [], []
+    if limit <= 0:
+        logging.error("Limit must be non negative non zero value")
+        return three, five, fifteen
     for i in range(1, limit):
-        if limit % 3 == 0:
-            print("Fizz")
+        if i % 3 == 0:
             three.append(i)
-
-        if limit % 5 == 0:
-            print("Buzz")
-            three.append(i)
-        
-        if limit % 15 == 0:
-            print("FizzBuzz")
-            three.append(i)
+        if i % 5 == 0:
+            five.append(i)
+        if i % 15 == 0:
+            fifteen.append(i)
 
     return three, five, fifteen
 
@@ -49,7 +47,7 @@ def main():
             logging.error("Please input a non negative non zero value")
             sys.exit()
         three, five, fifteen = fizz_buzz(up_lim)
-    print(len(three), len(five), len(fifteen))
+    print(three, five, fifteen)
 
 if __name__ == '__main__':
     main()
