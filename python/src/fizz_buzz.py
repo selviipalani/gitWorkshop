@@ -2,6 +2,7 @@
 import logging
 import sys
 
+
 def fizz_buzz(limit):
     """
     FizzBuzz function
@@ -30,8 +31,8 @@ def fizz_buzz(limit):
 
 def main():
     """
-    Entrypoint for fizz_buzz.py 
-    Get command line args, if none 
+    Entrypoint for fizz_buzz.py
+    Get command line args, if none
     run fizz_buzz to a default value
     """
     n = len(sys.argv)
@@ -49,5 +50,6 @@ def main():
         three, five, fifteen = fizz_buzz(up_lim)
     print(three, five, fifteen)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
